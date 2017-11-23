@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">CourtCounter</string>
-    <string name="team_name">Team A</string>
+    <string name="team_name_A">Team A</string>
+    <string name="team_name_B">Team B</string>
+    <string name="text_3point">+3 POINTS</string>
+    <string name="text_2point">+2 POINTS</string>
+    <string name="text_1point">+1 POINT</string>
 </resources>

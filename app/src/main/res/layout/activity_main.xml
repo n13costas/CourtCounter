@@ -1,54 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.example.android.courtcounter.MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/team_name"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:padding="8dp"
-        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/team_a_score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textAlignment="center"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/team_name_A"
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/point_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+1 POINT"
-        android:padding="8dp"
-        android:layout_marginBottom="24dp"
-        android:onClick="increment_by1"/>
-    <Button
-        android:id="@+id/point_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+2 POINT"
-        android:padding="8dp"
-        android:layout_marginBottom="24dp"
-        android:onClick="increment_by2"/>
-    <Button
-        android:id="@+id/point_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+3 POINT"
-        android:padding="8dp"
-        android:onClick="increment_by3"/>
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/point_1_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="increment_by1A"
+            android:padding="8dp"
+            android:text="@string/text_1point" />
+
+        <Button
+            android:id="@+id/point_2_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="increment_by2A"
+            android:padding="8dp"
+            android:text="@string/text_2point" />
+
+        <Button
+            android:id="@+id/point_3_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="increment_by3A"
+            android:padding="8dp"
+            android:text="@string/text_3point" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/team_name_B"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/point_1_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="increment_by1B"
+            android:padding="8dp"
+            android:text="@string/text_1point" />
+
+        <Button
+            android:id="@+id/point_2_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="increment_by2B"
+            android:padding="8dp"
+            android:text="@string/text_2point" />
+
+        <Button
+            android:id="@+id/point_3_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="increment_by3B"
+            android:padding="8dp"
+            android:text="@string/text_3point" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

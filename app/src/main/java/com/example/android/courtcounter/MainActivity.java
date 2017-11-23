@@ -13,21 +13,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    int team_a_points;
+    int scoreTeamA;
 
     public void increment_by1(View view) {
-        team_a_points++;
-        displayForTeamA(team_a_points);
+        scoreTeamA++;
+        displayForTeamA(scoreTeamA);
     }
 
     public void increment_by2(View view) {
-        team_a_points = team_a_points + 2;
-        displayForTeamA(team_a_points);
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
     public void increment_by3(View view) {
-        team_a_points = team_a_points + 3;
-        displayForTeamA(team_a_points);
+        scoreTeamA = scoreTeamA + 3;
+        displayForTeamA(scoreTeamA);
     }
 
     public void displayForTeamA(int score) {

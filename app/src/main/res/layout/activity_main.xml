@@ -11,14 +11,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="team A"
+        android:text="@string/team_name"
         android:textAlignment="center"
         android:textStyle="bold"
         android:padding="8dp"
         />
 
     <TextView
-        android:id="@+id/teamA_points"
+        android:id="@+id/team_a_score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
@@ -33,19 +33,22 @@
         android:layout_height="wrap_content"
         android:text="+1 POINT"
         android:padding="8dp"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:onClick="increment_by1"/>
     <Button
         android:id="@+id/point_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+2 POINT"
         android:padding="8dp"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:onClick="increment_by2"/>
     <Button
         android:id="@+id/point_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+3 POINT"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:onClick="increment_by3"/>
 
 </LinearLayout>
